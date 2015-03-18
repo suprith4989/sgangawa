@@ -15,14 +15,16 @@ wait.until(page_is_loaded)
 
 # Here you provide your mail id
 email_field = driver.find_element_by_id("email")
-email_field.send_keys("suprith_4989@yahoo.com")
+email_field.send_keys("example@example.com")
 
-Here you pass your password
+# Here you pass your password
 password_field = driver.find_element_by_id("pass")
-password_field.send_keys("Su9403324989")
+password_field.send_keys("password")
 password_field.send_keys(Keys.RETURN)
 
 # Wait for 5 seconds until the login is successful
 time.sleep(5)
 # Close the driver
 driver.close()
+
+# Try and run this script as it is and have a look for yourself
